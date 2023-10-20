@@ -7,7 +7,7 @@ $$
 $$
 
 $$
-\chi \chi \to \gamma\gamma, gg, W^+ W^-, ZZ, HH, \gamma Z, HZ, \nu_e\bar{\nu}_e, \nu_\mu\bar{\nu}_\mu, \nu_\tau \bar{\nu}_\tau
+\chi \chi \to \gamma\gamma, gg, W^+ W^-, ZZ, HH, \gamma Z, HZ
 $$
 
 
