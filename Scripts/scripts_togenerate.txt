@@ -1,0 +1,145 @@
+#########
+SHP 
+#########
+
+-bb
+
+import model ScalarHiggsPortal_NLO_UF
+define darkmatter n1
+generate indirect_detection b b~
+output folder_name
+launch folder_name
+set indirect = flux_source
+set vave_indirect_cont 1e-3
+set save_output spectra
+set precise
+set sigmav_method madevent 
+set nevents 100000
+set msdm 1000
+
+
+-ww off shell
+
+import model ScalarHiggsPortal_NLO_UF
+define darkmatter n1
+define ferm = u u~ d d~ c c~ s s~ t t~ b b~ e- e+ mu- mu+ ta- ta+ ve ve~ vm vm~ vt vt~
+generate indirect_detection w+ w- > ferm ferm ferm ferm / g0 g- g+ ferm 
+output folder_name
+launch folder_name
+set indirect = flux_source
+set vave_indirect_cont 1e-3
+set save_output spectra
+set precise
+set sigmav_method madevent 
+set nevents 100000
+set msdm 1000
+
+
+
+#########
+DMSimp1
+#########
+
+-nu
+
+import model DMsimp_s_spin1_MD
+define darkmatter ~xd
+generate indirect_detection vt vt~
+output folder_name
+launch folder_name
+set indirect = flux_source
+set gnu11 0.25 
+set gnu22 0.25 
+set gnu33 0.25 
+set vave_indirect_cont 1e-3
+set save_output spectra
+set precise
+set sigmav_method madevent 
+set nevents 100000
+set msdm 1000
+
+
+-e
+
+import model DMsimp_s_spin1_MD
+define darkmatter ~xd
+generate indirect_detection e+ e-
+output folder_name
+launch folder_name
+set indirect = flux_source
+set vave_indirect_cont 1e-3
+set save_output spectra
+set gVl11 0.25 
+set gVl22 0.25 
+set gVl33 0.25 
+set gAl11 0.00 
+set gAl22 0.00 
+set gAl33 0.00
+set precise
+set sigmav_method madevent 
+set nevents 10000
+set msdm 100000
+
+
+-eL
+
+import model DMsimp_s_spin1_MD
+define darkmatter ~xd
+generate indirect_detection e+ e-
+output folder_name
+launch folder_name
+set indirect = flux_source
+set vave_indirect_cont 1e-3
+set save_output spectra
+set gVl11 0.25 
+set gVl22 0.25 
+set gVl33 0.25 
+set gAl11 -0.25 
+set gAl22 -0.25 
+set gAl33 -0.25 
+set precise
+set sigmav_method madevent 
+set nevents 10000
+set msdm 100000
+
+
+-eR
+
+import model DMsimp_s_spin1_MD
+define darkmatter ~xd
+generate indirect_detection e+ e-
+output folder_name
+launch folder_name
+set indirect = flux_source
+set vave_indirect_cont 1e-3
+set save_output spectra
+set gVl11 0.25 
+set gVl22 0.25 
+set gVl33 0.25 
+set gAl11 0.25 
+set gAl22 0.25 
+set gAl33 0.25 
+set precise
+set sigmav_method madevent 
+set nevents 10000
+set msdm 100000
+
+
+######################################################
+ADD THE part related to THE HZ process....
+######################################################
+
+-hZ
+
+import model DMsimp_s_spin0_MD
+define darkmatter ~xd
+generate ~xd ~xdb > h z
+output folder_name
+launch folder_name 
+set indirect = flux_source
+set vave_indirect_cont 1e-3
+set save_output spectra
+set precise
+set sigmav_method madevent 
+set nevents 10000
+set msdm 100000
