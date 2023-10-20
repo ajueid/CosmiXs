@@ -1,2 +1,3 @@
-# DMSpectra
-Repository for the updated particle spectra from dark matter. The predictions are made using the state-of-art MC event generators
+# Updated spectra of stable particles from dark matter
+
+We provide the spectra of the cosmic messengers such as $\bar{p}, e^+, \gamma$ or $\nu$ at the production for various annihilation channels and dark matter masses.
