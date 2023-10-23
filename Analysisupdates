@@ -1,0 +1,29 @@
+Below we list the parts of the analysis that are still missing and the techincal issues that we are facing.
+
+1) Decay spectra (--To finish--)
+We have to check whether the spectra for particles produced from the DM decay depends on the the DM spin (e.g. scalar or vector DM).
+In order to test this with MadDM we should modify the mode file, e.g. in the SHP model, in order to add the vertex n1 --> ffbar.
+An easier way to test this is by using the Standard Model and the decay of the Higgs, as scalar, and the Z boson, as a vector particle.
+One can thus use MadGraph to generate the LHEF and then run the main101.cc to get the spectra.
+Alternatively, from the LHEF one can .... PLEASE ADIL FILL....
+
+2) Spectra for offshell EW bosons (--To finish--)
+We have to generate the spectra with the four body syntax to include the off shell contribution from 5 GeV to 90 GeV for the W to 100 GeV for the Z and 135 GeV for the H.
+Instead above those masses we can use the 2 body. 
+
+3) Spectra of polarized EW bosons. (--Code error--)
+We should include the off shell contribution also for the polarized spectra of the ZZ and WW.
+The problem is that in the four body diagrams the WW and ZZ particles are intermidiate ones so it is not possible to change the polarization of them in the LHEF.
+MadGraph has a syntax to account only for fixed polarized particles which is generate n1 n1 > w+{0} w-{0} > ferm ferm ferm ferm / ferm g0 g- g+.
+This syntax work in the two body case: 
+This is for transverse
+generate indirect_detection w+{T} w-{T}
+This is for longitudinal:
+generate indirect_detection w+{0} w-{0}
+But the four body it gives an error:
+Command "generate n1 n1 > w+{0} w-{0} > ferm ferm ferm ferm / ferm g0 g- g+" interrupted with error:
+InvalidCmd : Polarization restriction can not be used as required s-channel
+
+4) PeV DM spectra (--To finish--) and (--Code error--)
+We should run the spectra also for DM masses above 100 TeV. However, there is an error in Pythia with the electron channels for masses above 50 TeV.
+
