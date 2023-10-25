@@ -6,11 +6,6 @@ $$
 \chi \chi \to e_L^+ e_L^-, e_R^+ e_R^-, e^+ e^-, \mu_L^+ \mu_L^-, \mu_R^+ \mu_R^-, \mu^+ \mu^-, \tau^+_L \tau^-_L, \tau^+_R \tau^-_R, \tau^+ \tau^-, u\bar{u}, d\bar{d}, s\bar{s}, c\bar{c}, b\bar{b}, t\bar{t}, \gamma\gamma, gg, W^+ W^-, ZZ, HH, \gamma Z, HZ, \nu \bar{\nu}
 $$
 
-$$
-\chi \chi \to \gamma\gamma, gg, W^+ W^-, ZZ, HH, \gamma Z, HZ, \bar{\nu}_e \nu_e, \nu_{\mu} \nu_{\mu}
-$$
-
-
 ```console
 # DM 	    Log10[x]     dNdx[ eL ]   			dNdx[ eR ]    		dNdx[ e	]      dNdx[ muL ]     		dNdx[ muR ]    		dNdx[ mu ]     		dNdx[ tauL ]     	dNdx[ tauR ]     	dNdx[ tau ]   		dNdx[ u ]  		dNdx[ d ]  		dNdx[ s ]  		dNdx[ c ]    		dNdx[ b ]   		dNdx[ t ]		dNdx[ a ] 		dNdx[ g	]   dNdx[ W ]   	dNdx[ Z ]    		dNdx[ H ]   		dNdx[ aZ ]	dNdx[ HZ ]    		dNdx[ nue ]   		dNdx[ numu ]   	dNdx[ nutau ]
 ```
