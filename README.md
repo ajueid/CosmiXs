@@ -142,5 +142,5 @@ And optionally
 - [A. Jueid, J. Kip, R. Ruiz de Austri, P. Skands, e-Print:2303.11363](https://arxiv.org/2302.11363)
 
 
-### Contact
+## Contact
 If you have any question or bug reports, please contact Mattia Di Mauro (dimauro.mattia@gmail.com), Adil Jueid (adil.hep@gmail.com) and Roberto Ruiz de Austri (rruiz@ific.uv.es)
