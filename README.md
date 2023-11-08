@@ -123,23 +123,24 @@ Here we show how to generate the spectra for three examples:
     * `310:mayDecay=on`
     * `2112:mayDecay=on`
 
+## To Do
+
+* Generate the spectra for DM masses from 100 TeV and 1 PeV.
+* Add a code snippet to quickly plot the spectra and perform comparisons.
+* Generate the spectra for the off-shell $W_L W_L, W_T W_T, Z_L Z_L$ and $Z_T Z_T$
 
 ## Citations
 
 If you use these Tables please cite the following references:
 
+- [C. Arina, M. Di Mauro, N. Fornengo, J. Heisig, A. Jueid, R. Ruiz de Austri, e-Print: xxxx.xxxxx](placeholder)
+
+And optionally
+
 - [S. Amoroso, S. Caron, A. Jueid, R. Ruiz de Austri, P. Skands, JCAP 05 (2019) 007](https://arxiv.org/abs/1812.07424)
 - [A. Jueid, J. Kip, R. Ruiz de Austri, P. Skands, JCAP 04 (2023) 068](https://arxiv.org/abs/2202.11546)
 - [A. Jueid, J. Kip, R. Ruiz de Austri, P. Skands, e-Print:2303.11363](https://arxiv.org/2302.11363)
 
-If you use the sampler code please cite:
-
-- [W. Beenakker, S. Caron, J. Kip, R. Ruiz de Austri, Zhongyi Zhang, e-Print: 2306.16523](https://arxiv.org/abs/2306.16523)
-
-And optionally
-- [S. Mrenna, P. Skands, Phys.Rev.D 94 (2016) 7, 074005](https://arxiv.org/abs/1605.08352)
-- [S. Amoroso, S. Caron, A. Jueid, R. Ruiz de Austri, P. Skands,  PoS TOOLS2020 (2021) 028](https://arxiv.org/abs/2012.08901)
-- [A. Jueid, J. Phys.: Conf. Ser. 2156 012057](https://arxiv.org/abs/2110.09747)
 
 ### Contact
-If you have any question or bug reports, please contact adil.hep@gmail.com
+If you have any question or bug reports, please contact Mattia Di Mauro (dimauro.mattia@gmail.com), Adil Jueid (adil.hep@gmail.com) and Roberto Ruiz de Austri (rruiz@ific.uv.es)
