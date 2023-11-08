@@ -16,9 +16,14 @@ $$
 
 ## Structure of the repository
 
-<a name="structure"></a>
-## Package structure
-&emsp; The package consists of the following:
+The repository includes the following  
+* `Data/` directory includes the spectra at the source for the following cosmic messengers:  
+    * AtProduction-AntiP.dat: for the spectra of $\bar{p}$.
+    * AtProduction-Gamma.dat: for the spectra of $\gamma$ rays.
+    * AtProduction-Nuel.dat: for the spectra of $\nu_e$.
+    * AtProduction-Numu.dat: for the spectra of $\nu_\mu$.
+    * AtProduction-Nuta.dat: for the spectra of $\nu_\tau$.
+    * AtProduction-Positrons.dat: for the spectra of $e^+$.
 * `run.sh` shall script that used to excute the package
 * `scan_input.py` input file that the user has to fill it. The user can control the run via the switches in this file
 * `ML_regressor_genericFunctions.ipynb` google colab notebook that inclide the scan over the generic fucntions. The user can use it to scan ov\
