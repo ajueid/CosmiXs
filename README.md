@@ -102,6 +102,28 @@ Here we show how to generate the spectra for three examples:
     * `set nevents 10000`
     * `set msdm 1000`
 
+## Correct setup for the VINCIA Antenna shower
+
+* Parameters to select the VINCIA shower with full-fledged electroweak corrections
+    * `PartonShowers:model   = 2`
+    * `Vincia:ewMode         = 3`
+    * `TimeShower:pTminWeak = 1.0000000000e-01`
+    * `WeakShower:singleEmission = off`
+
+* Parameters of the Lund string model
+    * `StringZ:aLund         =  0.337409`
+    * `StringZ:bLund         =  0.784682`
+    * `StringPT:sigma        =  0.296569`
+    * `StringZ:aExtraDiquark =  1.246986`
+
+* Enables for PYTHIA to decay the muon, $\pi^\pm$, $K_L$, $K^0$ and the neutron 
+    * `13:mayDecay=on`
+    * `211:mayDecay=on`
+    * `321:mayDecay=on`
+    * `310:mayDecay=on`
+    * `2112:mayDecay=on`
+
+
 ## Citations
 
 If you use these Tables please cite the following references:
