@@ -55,20 +55,51 @@ dNdx [eL]   	dNdx [eR] 	 dNdx [e]     dNdx [muL]   dNdx [muR]		dNdx [mu]     		d
 
 ## How to generate the spectra with MadDM
 
-Here we show how to generate the spectra using three examples: 
+Here we show how to generate the spectra for three examples: 
 
-* $\chi \chi \to b\bar{b}$ (using the Higgs portal model)
+* $\chi \chi \to b\bar{b}$ using the Higgs portal model:
     * `import model ScalarHiggsPortal_NLO_UFO`
     * `define darkmatter n1`
     * `generate indirect_detection b b~`
     * `output folder_name`
     * `launch folder_name`
     * `set indirect = flux_source`
-    * `set vave_indirect_cont 1e-3`
+    * `set save_indirect_cont 1e-3`
     * `set save_output spectra`
     * `set precise`
     * `set sigmav_method madevent`
     * `set nevents 100000`
+    * `set msdm 1000`
+
+* $\chi\chi \to \nu_e \bar{\nu}_e$ using a simplified model with spin-1 mediator:
+    * `import model DMsimp_s_spin1_MD`
+    * `define darkmatter ~xd`
+    * `generate indirect_detection ve ve~`
+    * `output folder_name`
+    * `launch folder_name`
+    * `set indirect = flux_source`
+    * `set gnu11 0.25` 
+    * `set gnu22 0.25` 
+    * `set gnu33 0.25`
+    * `set save_indirect_cont 1e-3`
+    * `set save_output spectra`
+    * `set precise`
+    * `set sigmav_method madevent` 
+    * `set nevents 100000`
+    * `set msdm 1000`
+
+* $\chi\chi \to HZ$ using a simplified model with pseudo-scalar mediator:
+    * `import model DMsimp_s_spin0_MD`
+    * `define darkmatter ~xd`
+    * `generate ~xd ~xdb > h z`
+    * `output folder_name`
+    * `launch folder_name` 
+    * `set indirect = flux_source`
+    * `set save_indirect_cont 1e-3`
+    * `set save_output spectra`
+    * `set precise`
+    * `set sigmav_method madevent` 
+    * `set nevents 10000`
     * `set msdm 1000`
 
 ## Citations
