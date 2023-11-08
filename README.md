@@ -53,7 +53,23 @@ In this folder, we provide the spectra for 29 annihilation channels and 6 cosmic
 dNdx [eL]   	dNdx [eR] 	 dNdx [e]     dNdx [muL]   dNdx [muR]		dNdx [mu]     		dNdx [tauL]   	dNdx [tauR]  dNdx [tau]   dNdx [nue]   dNdx [numu]   	dNdx [nutau]		dNdx [u]  		dNdx [d]  	 dNdx [s]  	  dNdx [c]     dNdx [b]   		dNdx [t]		dNdx [a] 		dNdx [g]     dNdx [W]     dNdx [WL]    dNdx [WT]        dNdx [Z]        dNdx [ZL]       dNdx [ZT]    dNdx [H]     dNdx [aZ]	   dNdx[ HZ ]    		  
 ```
 
+## How to generate the spectra with MadDM
 
+Here we show how to generate the spectra using three examples: 
+
+* $\chi \chi \to b\bar{b}$ (using the Higgs portal model)
+    * `import model ScalarHiggsPortal_NLO_UFO`
+    * `define darkmatter n1`
+    * `generate indirect_detection b b~`
+    * `output folder_name`
+    * `launch folder_name`
+    * `set indirect = flux_source`
+    * `set vave_indirect_cont 1e-3`
+    * `set save_output spectra`
+    * `set precise`
+    * `set sigmav_method madevent`
+    * `set nevents 100000`
+    * `set msdm 1000`
 
 ## Citations
 
