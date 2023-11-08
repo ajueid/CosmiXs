@@ -14,6 +14,14 @@ $$
 \chi\chi \to \gamma\gamma, gg, W^+ W^-, W^+_L W^-_L, W^+_T W^-_T, ZZ, Z_L Z_L, Z_T Z_T, HH, \gamma Z, HZ.
 $$
 
+## Novelty of this Analysis
+
+* Inclusion of off-shell effects for $WW, ZZ, HZ, HH$ producing four fermions and covering DM masses from 5 GeV to $M_X, X=W,Z,H$. 
+* Inclusion of helicity information through the LHEF (used as input for PYTHIA). Using VINCIA shower plugin which is based on the helicity-depedent Antenna shower, electroweak corrections are taken properly into account.
+* Spectra for new channels not previously calculated: $\gamma Z$ and $HZ$.
+* Using running quark masses for the quark annihilation channels.
+* Using full one-loop form factors for the one-loop induced annihilation channels: $\gamma\gamma$, $gg$ and $\gamma Z$.
+
 ## Structure of the repository
 
 The repository includes the following  
@@ -39,11 +47,13 @@ The repository includes the following
 
 For each stable final state, there is one dedicated file in ascii format. The tables can be found in the following folder `Data/`: 
 
-In this folder, we provide the spectra for 29 annihilation channels and 6 cosmic messengers. Each file contains 31 columns: The DM mass in GeV, the fraction x -- defined as the kinetic energy divided by the DM mass in 100 bins on the logarithmic scale. The rest of the columns are organised as follows
+In this folder, we provide the spectra for 29 annihilation channels and 6 cosmic messengers named as AtProduction-FS.dat where FS=AntiP, Gamma, Nuel, Numu, Nuta, Positrons. Each file contains 31 columns: The DM mass in GeV, the fraction x -- defined as the kinetic energy divided by the DM mass in 100 bins on the logarithmic scale. The rest of the columns are organised as follows
 
 ```console
 dNdx [eL]   	dNdx [eR] 	 dNdx [e]     dNdx [muL]   dNdx [muR]		dNdx [mu]     		dNdx [tauL]   	dNdx [tauR]  dNdx [tau]   dNdx [nue]   dNdx [numu]   	dNdx [nutau]		dNdx [u]  		dNdx [d]  	 dNdx [s]  	  dNdx [c]     dNdx [b]   		dNdx [t]		dNdx [a] 		dNdx [g]     dNdx [W]     dNdx [WL]    dNdx [WT]        dNdx [Z]        dNdx [ZL]       dNdx [ZT]    dNdx [H]     dNdx [aZ]	   dNdx[ HZ ]    		  
 ```
+
+
 
 ## Citations
 
