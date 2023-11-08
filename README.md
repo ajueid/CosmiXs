@@ -35,6 +35,16 @@ The repository includes the following
 * `Interpolate.py`: Python code snippet to perform mass interpolations.
 * `Example.py`: Python example on how to call `Interpolate` class and calculate the spectra for mass values not included in our tables.
 
+## Structure of the Tables
+
+For each stable final state, there is one dedicated file in ascii format. The tables can be found in the following folder: 
+
 ```console
-# DM 	    Log10[x]     dNdx[ eL ]   			dNdx[ eR ]    		dNdx[ e	]      dNdx[ muL ]     		dNdx[ muR ]    		dNdx[ mu ]     		dNdx[ tauL ]     	dNdx[ tauR ]     	dNdx[ tau ]   		dNdx[ u ]  		dNdx[ d ]  		dNdx[ s ]  		dNdx[ c ]    		dNdx[ b ]   		dNdx[ t ]		dNdx[ a ] 		dNdx[ g	]   dNdx[ W ]   	dNdx[ Z ]    		dNdx[ H ]   		dNdx[ aZ ]	dNdx[ HZ ]    		dNdx[ nue ]   		dNdx[ numu ]   	dNdx[ nutau ]
+$ Data/
+``
+
+In this folder, we provide the spectra for 29 annihilation channels and 6 cosmic messengers. Each file contains 31 columns: The DM mass in GeV, the fraction x -- defined as the kinetic energy divided by the DM mass in 100 bins on the logarithmic scale. The rest of the columns are organised as 
+
+```console
+dNdx [eL]   	dNdx [eR] 	 dNdx [e]     dNdx [muL]   dNdx [muR]		dNdx [mu]     		dNdx [tauL]   	dNdx [tauR]  dNdx [tau]   dNdx [nue]   dNdx [numu]   	dNdx [nutau]		dNdx [u]  		dNdx [d]  	 dNdx [s]  	  dNdx [c]     dNdx [b]   		dNdx [t]		dNdx [a] 		dNdx [g]     dNdx [W]     dNdx [WL]    dNdx [WT]        dNdx [Z]        dNdx [ZL]       dNdx [ZT]    dNdx [H]     dNdx [aZ]	   dNdx[ HZ ]    		  
 ```
