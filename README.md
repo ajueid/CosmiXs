@@ -37,11 +37,7 @@ The repository includes the following
 
 ## Structure of the Tables
 
-For each stable final state, there is one dedicated file in ascii format. The tables can be found in the following folder: 
-
-```console
-$ Data/
-``
+For each stable final state, there is one dedicated file in ascii format. The tables can be found in the following folder `Data/`: 
 
 In this folder, we provide the spectra for 29 annihilation channels and 6 cosmic messengers. Each file contains 31 columns: The DM mass in GeV, the fraction x -- defined as the kinetic energy divided by the DM mass in 100 bins on the logarithmic scale. The rest of the columns are organised as 
 
