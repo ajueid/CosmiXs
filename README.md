@@ -24,23 +24,16 @@ The repository includes the following
     * AtProduction-Numu.dat: for the spectra of $\nu_\mu$.
     * AtProduction-Nuta.dat: for the spectra of $\nu_\tau$.
     * AtProduction-Positrons.dat: for the spectra of $e^+$.
-* `run.sh` shall script that used to excute the package
-* `scan_input.py` input file that the user has to fill it. The user can control the run via the switches in this file
-* `ML_regressor_genericFunctions.ipynb` google colab notebook that inclide the scan over the generic fucntions. The user can use it to scan ov\
-er defined function. The class `scan()` include the following ML models:
-  * DNNR: MLP regressor with 4 hidden layers, 100 nueron each and MSE loss function.
-  * GBR : GradientBoostingRegressor
-  * RFR : RandomForestRegressor
-  * SVMRBF: Supported vector regressor with RBF kernel
-  * SVMPOLY: Supported vector regressor with polynomial kernel
-* `docs/` directory include the following:
-  * `Install` documentary on how to install the package
-  * `Run the package` documentay on how to run the package
-  * `how to adjust the input file` documentray on how the user adjust the input file
-  * `work flow` explaination how the package modules and inhertied functions work
-* `source/` directory inculde the following source files:
-  * `auxiliary.py`  include the auxiliary functions to link spheno with HB/HS and functions for parallel run
-  * `MLs_HEP.py`   main file with the scanner loop. The class `scan()` is used to access the type of the needed ML
+* `Scripts/` directory includes the necessary files and commands to generate the spectra:
+    * `Models/` directory includes the model files in the Universal FeynRules Output (UFO) format and includes
+        * `DMsimp_s_spin0_MD/` for the simplified model with pseudo-scalar mediator.
+        * `DMsimp_s_spin1_MD/` for the simplified model with vector mediator.
+        * `ScalarHiggsPortal_NLO_UFO/` for the minimal model with Higgs portal including full NLO QCD corrections.
+    * `main101.cc`: a minimal C++ code that calculate the spectra for the cosmic messengers included here with PYTHIA. This code reads the input from `spectrum.cmnd`.
+    * `scripts_togenerate.txt`: A plain text file that shows instructions on how to generate events in MadDM.
+    * `spectrum.cmnd`: A basic input file to be read by PYTHIA code `main101.cc` and which includes all the necessary parameters to properly activate VINCIA shower algorithm and generate the spectra.
+* `Interpolate.py`: Python code snippet to perform mass interpolations.
+* `Example.py`: Python example on how to call `Interpolate` class and calculate the spectra for mass values not included in our tables.
 
 ```console
 # DM 	    Log10[x]     dNdx[ eL ]   			dNdx[ eR ]    		dNdx[ e	]      dNdx[ muL ]     		dNdx[ muR ]    		dNdx[ mu ]     		dNdx[ tauL ]     	dNdx[ tauR ]     	dNdx[ tau ]   		dNdx[ u ]  		dNdx[ d ]  		dNdx[ s ]  		dNdx[ c ]    		dNdx[ b ]   		dNdx[ t ]		dNdx[ a ] 		dNdx[ g	]   dNdx[ W ]   	dNdx[ Z ]    		dNdx[ H ]   		dNdx[ aZ ]	dNdx[ HZ ]    		dNdx[ nue ]   		dNdx[ numu ]   	dNdx[ nutau ]
