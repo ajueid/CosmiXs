@@ -125,13 +125,13 @@ Here we show how to generate the spectra for three examples:
 
 ## To Do
 
-* Generate the spectra for DM masses from 100 TeV and 1 PeV.
+* Generate the spectra for DM masses from 100 TeV to 1 PeV.
 * Add a code snippet to quickly plot the spectra and perform comparisons.
 * Generate the spectra for the off-shell $W_L W_L, W_T W_T, Z_L Z_L$ and $Z_T Z_T$
 
 ## Citations
 
-If you use these Tables please cite the following references:
+If you use these Tables please cite:
 
 - [C. Arina, M. Di Mauro, N. Fornengo, J. Heisig, A. Jueid, R. Ruiz de Austri, e-Print: xxxx.xxxxx](placeholder)
 
