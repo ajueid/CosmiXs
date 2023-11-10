@@ -137,4 +137,7 @@ If you use these Tables please cite:
 
 
 ## Contact
-If you have any question or bug reports, please contact Mattia Di Mauro (dimauro.mattia@gmail.com), Adil Jueid (adil.hep@gmail.com) and Roberto Ruiz de Austri (rruiz@ific.uv.es)
+If you have any question or bug reports, please contact:
+* Mattia Di Mauro (dimauro.mattia@gmail.com)
+* Adil Jueid (adil.hep@gmail.com)
+* Roberto Ruiz de Austri (rruiz@ific.uv.es)
