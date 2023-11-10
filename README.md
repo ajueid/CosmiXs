@@ -116,7 +116,7 @@ Here we show how to generate the spectra for three examples:
     * `StringPT:sigma        =  0.296569`
     * `StringZ:aExtraDiquark =  1.246986`
 
-* Enables for PYTHIA to decay the muon, $\pi^\pm$, $K_L$, $K^0$ and the neutron 
+* To enable for PYTHIA to decay the muon, $\pi^\pm$, $K_L$, $K^0$ and the neutron 
     * `13:mayDecay=on`
     * `211:mayDecay=on`
     * `321:mayDecay=on`
