@@ -135,12 +135,6 @@ If you use these Tables please cite:
 
 - [C. Arina, M. Di Mauro, N. Fornengo, J. Heisig, A. Jueid, R. Ruiz de Austri, e-Print: xxxx.xxxxx](placeholder)
 
-If you would like to assess the impact of QCD uncertainties, you can cite
-
-- [S. Amoroso, S. Caron, A. Jueid, R. Ruiz de Austri, P. Skands, JCAP 05 (2019) 007](https://arxiv.org/abs/1812.07424)
-- [A. Jueid, J. Kip, R. Ruiz de Austri, P. Skands, JCAP 04 (2023) 068](https://arxiv.org/abs/2202.11546)
-- [A. Jueid, J. Kip, R. Ruiz de Austri, P. Skands, e-Print:2303.11363](https://arxiv.org/2302.11363)
-
 
 ## Contact
 If you have any question or bug reports, please contact Mattia Di Mauro (dimauro.mattia@gmail.com), Adil Jueid (adil.hep@gmail.com) and Roberto Ruiz de Austri (rruiz@ific.uv.es)
