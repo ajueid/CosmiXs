@@ -102,7 +102,7 @@ Here we show how to generate the spectra for three examples:
     * `set nevents 10000`
     * `set msdm 1000`
 
-## Correct setup for the VINCIA Antenna shower
+## Setup for the VINCIA Antenna shower
 
 * Parameters to select the VINCIA shower with full-fledged electroweak corrections
     * `PartonShowers:model   = 2`
