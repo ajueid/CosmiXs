@@ -1,4 +1,8 @@
-# Updated spectra of stable particles from dark matter
+<p align="center">
+<img src="https://github.com/ajueid/DMSpectra/main/Logo/Logo.png?raw=true" width="350">
+</p>
+
+# CosmiX: Cosmic spectra for multimessenger indirect dark matter searches
 
 We provide the spectra of the cosmic messengers such as $\bar{p}, e^+, \gamma$ or $\nu$ at the production for various annihilation channels and dark matter masses. In this case, we use PYTHIA version 8.310 and the VINCIA antenna shower algorithm. The spectra is generated for dark-matter masses between $5$ GeV and $100$ TeV (with a grid of 64 mass values) and 29 annihilation channels. For each mass point and each annihilation channel we have generated five million events using MadDM and passed to PYTHIA 8.310 using VINCIA shower. The annhilation channels considered in this work are:
 
@@ -134,6 +138,12 @@ Here we show how to generate the spectra for three examples:
 If you use these Tables please cite:
 
 - [C. Arina, M. Di Mauro, N. Fornengo, J. Heisig, A. Jueid, R. Ruiz de Austri, e-Print: xxxx.xxxxx](placeholder)
+
+If you would like to assess QCD uncertainties on the spectra, please cite:
+
+- [A. Jueid, J.Kip, R. Ruiz de Austri, P.Skands, e-Print:2303.11363](https://arxiv.org/abs/2303.11363)
+- [A. Jueid, J.Kip, R. Ruiz de Austri, P.Skands, JCAP 04 (2023) 068](https://arxiv.org/abs/2202.11546)
+- [S. Amoroso, S. Caron, A. Jueid, R. Ruiz de Austri, P.Skands, JCAP 05 (2019) 007](https://arxiv.org/abs/1812.07424)
 
 
 ## Contact
