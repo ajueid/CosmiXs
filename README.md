@@ -20,7 +20,7 @@ $$
 
 ## Novelty of this Analysis
 
-* Inclusion of off-shell effects for $WW, ZZ, HZ, HH$ producing four fermions and covering DM masses from 5 GeV to $M_X, X=W,Z,H$. 
+* Inclusion of off-shell effects for $WW, ZZ, HZ$ producing four fermions and covering DM masses from 5 GeV to $M_X, X=W,Z$. 
 * Inclusion of helicity information through the LHEF (used as input for PYTHIA). Using the VINCIA shower plugin, which is based on the helicity-depedent Antenna shower, electroweak corrections are taken properly into account.
 * Spectra for new channels not previously calculated: $\gamma Z$ and $HZ$.
 * Running quark masses are used for the quark annihilation channels.
