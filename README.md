@@ -1,5 +1,5 @@
 <p align="center">
-<Logo src="https://github.com/ajueid/DMSpectra/main/Logo/Logo.png?raw=true" width="350">
+<img src="https://github.com/ajueid/DMSpectra/main/img/Logo.png?raw=true" width="350">
 </p>
 
 # CosmiX: Cosmic spectra for multimessenger indirect dark matter searches
