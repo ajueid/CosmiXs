@@ -133,6 +133,7 @@ Here we show how to generate the spectra for three examples:
 
 * Generate the spectra for DM masses from 100 TeV to 1 PeV.
 * Add a code snippet to quickly plot the spectra and perform comparisons.
+* Add a code snippet to obtain the spectra for a decaying DM.
 * Generate the spectra for the off-shell $W_L W_L, W_T W_T, Z_L Z_L$ and $Z_T Z_T$
 
 ## Citations
@@ -141,7 +142,7 @@ If you use these Tables please cite:
 
 - [C. Arina, M. Di Mauro, N. Fornengo, J. Heisig, A. Jueid, R. Ruiz de Austri, e-Print: xxxx.xxxxx](placeholder)
 
-If you would like to assess QCD uncertainties on the spectra, please cite:
+If you would like to assess QCD uncertainties on the spectra (repo can be found on https://github.com/ajueid/qcd-dm.github.io), please cite:
 
 - [A. Jueid, J.Kip, R. Ruiz de Austri, P.Skands, e-Print:2303.11363](https://arxiv.org/abs/2303.11363)
 - [A. Jueid, J.Kip, R. Ruiz de Austri, P.Skands, JCAP 04 (2023) 068](https://arxiv.org/abs/2202.11546)
