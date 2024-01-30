@@ -54,14 +54,14 @@ class Interpolate:
         if not '+DHad [{}]'.format(self.channel) in list(df.columns):
             if self.mass in dm.unique():
                 x       = list(df[df['# DM'] == self.mass]['Log10[x]'])
-                dNdx    = list(df[df['# DM'] == self.mass]['dNdx [{}]'.format(self.channel)])
-                return x, dNdx
+                dNdLog10x    = list(df[df['# DM'] == self.mass]['dNdLog10x [{}]'.format(self.channel)])
+                return x, dNdLog10x
             else:
                 mass_lower, mass_upper = self._check_mass_enclosure(dm)
                 x_upper       = list(df[df['# DM'] == mass_upper]['Log10[x]'])
-                dNdx_upper    = list(df[df['# DM'] == mass_upper]['dNdx [{}]'.format(self.channel)])
+                dNdx_upper    = list(df[df['# DM'] == mass_upper]['dNdLog10x [{}]'.format(self.channel)])
                 x_lower       = list(df[df['# DM'] == mass_lower]['Log10[x]'])
-                dNdx_lower    = list(df[df['# DM'] == mass_lower]['dNdx [{}]'.format(self.channel)])
+                dNdx_lower    = list(df[df['# DM'] == mass_lower]['dNdLog10x [{}]'.format(self.channel)])
                 return mass_upper, x_upper, dNdx_upper, mass_lower, x_lower, dNdx_lower
     
     # Checks between wich two computed masses the user-specified mass is.
@@ -86,15 +86,14 @@ class Interpolate:
         if len(data) == 2:
             return data
         elif len(data) == 6:
-            dNdx = []
+            dNdLog10x = []
             for i in range(len(data[1])):
-                dNdx.append(self._linear_function(data[3], data[0], data[2][i], data[5][i]))
-            return data[1], dNdx
+                dNdLog10x.append(self._linear_function(data[3], data[0], data[2][i], data[5][i]))
+            return data[1], dNdLog10x
 
     # A dataframe is being made that will be the final output.
     def _generate_dataframe_output(self, f):
-        df = pd.DataFrame(data = {'Log10[x]': f[0], 'dNdx': f[1]})
-        return df
+        return pd.DataFrame(data = {'Log10[x]': f[0], 'dNdLog10x': f[1]})
 
     # The function that will provide the output of the spectrum for a given mass, channel, and final state in a pandas dataframe format.
     def make_spectrum(self):
@@ -121,7 +120,6 @@ def annihilation_spectrum(mass, channel, final_state, path=None):
     Returns:        
         pandas.DataFrame   
 
-    Disclaimer: The interpolated spectra may be unreliable for masses above 10 TeV or so. This code is a work in progress, it is advised that a sanity check is performed for all obtained spectra.
     """
     spectrum = Interpolate(mass, channel, final_state, path)
     return spectrum.make_spectrum()
