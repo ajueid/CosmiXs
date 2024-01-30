@@ -53,10 +53,10 @@ For each cosmic messenger, there is a dedicated file in ASCII format. The tables
 
 AtProduction-FS.dat where FS=AntiP, Gamma, Nuel, Numu, Nuta, Positrons. 
 
-Each file contains 31 columns: The DM mass in GeV, the fraction x -- defined as the kinetic energy divided by the DM mass in 100 bins on the logarithmic scale. The rest of the columns are organised as follows:
+Each file contains 31 columns: The DM mass in GeV, the fraction x -- defined as the kinetic energy divided by the DM mass in 100 bins on the logarithmic scale and the spectrum in units of dN/dlog10(x). The rest of the columns are organised as follows:
 
 ```console
-dNdx [eL]   	dNdx [eR] 	 dNdx [e]     dNdx [muL]   dNdx [muR]		dNdx [mu]     		dNdx [tauL]   	dNdx [tauR]  dNdx [tau]   dNdx [nue]   dNdx [numu]   	dNdx [nutau]		dNdx [u]  		dNdx [d]  	 dNdx [s]  	  dNdx [c]     dNdx [b]   		dNdx [t]		dNdx [a] 		dNdx [g]     dNdx [W]     dNdx [WL]    dNdx [WT]        dNdx [Z]        dNdx [ZL]       dNdx [ZT]    dNdx [H]     dNdx [aZ]	   dNdx[ HZ ]    		  
+dNdlog10(x) [eL]   	dNdlog10(x) [eR] 	 dNdlog10(x) [e]     dNdlog10(x) [muL]   dNdlog10(x) [muR]		dNdlog10(x) [mu]     		dNdlog10(x) [tauL]   	dNdlog10(x) [tauR]  dNdlog10(x) [tau]   dNdlog10(x) [nue]   dNdlog10(x) [numu]   	dNdlog10(x) [nutau]		dNdlog10(x) [u]  		dNdlog10(x) [d]  	 dNdlog10(x) [s]  	  dNdlog10(x) [c]     dNdlog10(x) [b]   		dNdlog10(x) [t]		dNdlog10(x) [a] 		dNdlog10(x) [g]     dNdlog10(x) [W]     dNdlog10(x) [WL]    dNdlog10(x) [WT]        dNdlog10(x) [Z]        dNdlog10(x) [ZL]       dNdlog10(x) [ZT]    dNdlog10(x) [H]     dNdlog10(x) [aZ]	   dNdlog10(x)[ HZ ]    		  
 ```
 
 ## How to generate the spectra with MadDM
