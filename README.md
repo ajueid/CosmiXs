@@ -81,6 +81,15 @@ Each file contains 31 columns: The DM mass in GeV, the fraction x -- defined as 
 dNdlog10(x) [eL]   	dNdlog10(x) [eR] 	 dNdlog10(x) [e]     dNdlog10(x) [muL]   dNdlog10(x) [muR]		dNdlog10(x) [mu]     		dNdlog10(x) [tauL]   	dNdlog10(x) [tauR]  dNdlog10(x) [tau]   dNdlog10(x) [nue]   dNdlog10(x) [numu]   	dNdlog10(x) [nutau]		dNdlog10(x) [u]  		dNdlog10(x) [d]  	 dNdlog10(x) [s]  	  dNdlog10(x) [c]     dNdlog10(x) [b]   		dNdlog10(x) [t]		dNdlog10(x) [a] 		dNdlog10(x) [g]     dNdlog10(x) [W]     dNdlog10(x) [WL]    dNdlog10(x) [WT]        dNdlog10(x) [Z]        dNdlog10(x) [ZL]       dNdlog10(x) [ZT]    dNdlog10(x) [H]     dNdlog10(x) [aZ]	   dNdlog10(x)[ HZ ]    		  
 ```
 
+For the anitdeuteron case, the spectra in ASCII format can be found in the folder `AntiDeuterons/`. So far we have the spectra for 9 annihilation channels. The files are
+named as 
+AtProduction-AntiD-Model.dat where Model=pcoal, pcoalsigma, spherical, GWF, AWF.
+
+Each file contains 11 column: The DM mass in GeV, and the fraction -- defined as the kinetic energy of the antideuteron divided by the DM mass in 180 bins on the logarithmic scale and the spectrum in units of dN/dlog10(x):
+```console
+uu        dd     cc      bb    tt    gg    WW     ZZ    HH
+```
+
 ## How to generate the spectra with MadDM
 
 Here we show how to generate the spectra for three examples: 
@@ -153,6 +162,7 @@ Here we show how to generate the spectra for three examples:
 
 ## To Do
 
+* Add the spectra of antideuterons for the remaining hadronic channels.
 * Generate the spectra for DM masses from 100 TeV to 1 PeV.
 * Add a code snippet to quickly plot the spectra and perform comparisons.
 * Add a code snippet to obtain the spectra for a decaying DM.
