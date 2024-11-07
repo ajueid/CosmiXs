@@ -52,7 +52,7 @@ The repository provides data and code orgenized as follows:
     * AtProduction-Numu.dat: for the spectra of $\nu_\mu$.
     * AtProduction-Nuta.dat: for the spectra of $\nu_\tau$.
     * AtProduction-Positrons.dat: for the spectra of $e^+$.
-* `AntiDeuterons` directory: includes the source spectra for antideuterons for the five coalescence models:
+* `AntiDeuterons/` directory: includes the source spectra for antideuterons for the five coalescence models:
     * AtProduction-AntiD-pcoal.dat: for the simple coalescence model.
     * AtProduction-AntiD-pcoalsigma.dat: for the simple coalescence model with a sharp cutoff on distance.
     * AtProduction-AntiD-spherical.dat: for the spherical coalescence model.
