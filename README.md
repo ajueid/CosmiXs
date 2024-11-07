@@ -26,6 +26,22 @@ $$
 * Running quark masses are used for the quark annihilation channels.
 * Full one-loop form factors are used for the one-loop induced annihilation channels: $\gamma\gamma$, $gg$ and $\gamma Z$.
 
+## The spectra of Antideuterons
+
+We also release the flux at the production for antideuterons from dark-matter annihilation. For this case we consider the following channels 
+
+$$
+\chi \chi \to u\bar{u}, d\bar{d}, c\bar{c}, b\bar{b}, t\bar{t}, gg, W^+W^-, ZZ, HH.
+$$
+
+We do not consider leptonic channels ($\ell^+\ell^-$ and $\nu\nu$) as the antideuteron yields for those is negligibly small. 
+For each channel we calculate the spectra for five coalescence models -- both simple coalescence models and models based on quantum mechanics --, namely:
+* Simple coalescence model.
+* Simple coalescence model with a sharp cut on distance ($p_{\rm coal} < 3$ fm).
+* Spherical coalescence model.
+* Wigner model with a Gaussian wavefunction.
+* Wigner model with a Argonne wavefunction.
+
 ## Structure of the repository
 
 The repository provides data and code orgenized as follows: 
@@ -36,6 +52,12 @@ The repository provides data and code orgenized as follows:
     * AtProduction-Numu.dat: for the spectra of $\nu_\mu$.
     * AtProduction-Nuta.dat: for the spectra of $\nu_\tau$.
     * AtProduction-Positrons.dat: for the spectra of $e^+$.
+* `AntiDeuterons` directory: includes the source spectra for antideuterons for the five coalescence models:
+    * AtProduction-AntiD-pcoal.dat: for the simple coalescence model.
+    * AtProduction-AntiD-pcoalsigma.dat: for the simple coalescence model with a sharp cutoff on distance.
+    * AtProduction-AntiD-spherical.dat: for the spherical coalescence model.
+    * AtProduction-AntiD-GWF.dat: for the Wigner model with a Gaussian wavefunction.
+    * AtProduction-AntiD-AWF.dat: for the Wigner model with Argonne wavefunction.
 * `Scripts/` directory: includes the necessary files and commands to generate the spectra:
     * `Models/` directory: includes the model files in the Universal FeynRules Output (UFO) format and includes
         * `DMsimp_s_spin0_MD/` for the simplified model with pseudo-scalar mediator.
@@ -141,6 +163,7 @@ Here we show how to generate the spectra for three examples:
 If you use these Tables please cite:
 
 - [C. Arina, M. Di Mauro, N. Fornengo, J. Heisig, A. Jueid, R. Ruiz de Austri, JCAP 03 (2024) 035](https://arxiv.org/abs/2312.01153)
+- [M. Di Mauro, N. Fornengo, A. Jueid, R. Ruiz de Austri, F. Bellini, arXiv:2411.XXXXX](https://arxiv.org/abs/2411.XXXXX)
 
 If you would like to assess QCD uncertainties on the spectra (repo can be found on https://github.com/ajueid/qcd-dm.github.io), please cite:
 
