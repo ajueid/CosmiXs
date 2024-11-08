@@ -173,7 +173,7 @@ Here we show how to generate the spectra for three examples:
 If you use these Tables please cite:
 
 - [C. Arina, M. Di Mauro, N. Fornengo, J. Heisig, A. Jueid, R. Ruiz de Austri, JCAP 03 (2024) 035](https://arxiv.org/abs/2312.01153)
-- [M. Di Mauro, N. Fornengo, A. Jueid, R. Ruiz de Austri, F. Bellini, arXiv:2411.XXXXX](https://arxiv.org/abs/2411.XXXXX)
+- [M. Di Mauro, N. Fornengo, A. Jueid, R. Ruiz de Austri, F. Bellini, e-Print: 2411.04815](https://arxiv.org/abs/2411.04815)
 
 If you would like to assess QCD uncertainties on the spectra (repo can be found on https://github.com/ajueid/qcd-dm.github.io), please cite:
 
