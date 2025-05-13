@@ -31,7 +31,7 @@ $$
 We also release the flux at the production for antideuterons from dark-matter annihilation. For this case we consider the following channels 
 
 $$
-\chi \chi \to u\bar{u}, d\bar{d}, c\bar{c}, b\bar{b}, t\bar{t}, gg, W^+W^-, ZZ, HH.
+\chi \chi \to u\bar{u}, d\bar{d}, s\bar{s}, c\bar{c}, b\bar{b}, t\bar{t}, gg, \gamma\gamma, W^+_L W^-_L, W^+_T W^-_T, W^+W^-, Z_L Z_L, Z_T Z_T, ZZ, HH, HZ, Z\gamma.
 $$
 
 We do not consider leptonic channels ($\ell^+\ell^-$ and $\nu\nu$) as the antideuteron yields for those is negligibly small. 
@@ -162,7 +162,6 @@ Here we show how to generate the spectra for three examples:
 
 ## To Do
 
-* Add the spectra of antideuterons for the remaining hadronic channels.
 * Generate the spectra for DM masses from 100 TeV to 1 PeV.
 * Add a code snippet to quickly plot the spectra and perform comparisons.
 * Add a code snippet to obtain the spectra for a decaying DM.
