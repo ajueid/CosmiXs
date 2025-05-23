@@ -149,6 +149,7 @@ Where the number of events is scaled by 10^{-8}. For annihilation channels into 
 $$
 \chi\chi \to \gamma\gamma, e_L^+ e_L^-, e_R^+ e_R^-, e^+ e^-, \mu_L^+ \mu_L^-, \mu_R^+ \mu_R^-, \mu^+ \mu^-, \tau^+_L \tau^-_L, \tau^+_R \tau^-_R, \tau^+ \tau^-, \nu \bar{\nu},
 $$
+
 we have generated 15 million annihilation events.
 
 ## How to generate the spectra with MadDM
