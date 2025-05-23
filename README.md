@@ -75,13 +75,16 @@ For each cosmic messenger, there is a dedicated file in ASCII format. The tables
 
 AtProduction-FS.dat where FS=AntiP, Gamma, Nuel, Numu, Nuta, Positrons. 
 
-Each file contains 31 columns: The DM mass in GeV, the fraction x -- defined as the kinetic energy divided by the DM mass in 100 bins on the logarithmic scale and the spectrum in units of dN/dlog10(x). The rest of the columns are organised as follows:
+Each file contains 31 columns: The DM mass in GeV, the fraction x -- defined as the kinetic energy divided by the DM mass in 180 bins on the logarithmic scale and the spectrum in units of dN/dlog10(x). The rest of the columns are organised as follows:
 
 ```console
-dNdlog10(x) [eL]   	dNdlog10(x) [eR] 	 dNdlog10(x) [e]     dNdlog10(x) [muL]   dNdlog10(x) [muR]		dNdlog10(x) [mu]     		dNdlog10(x) [tauL]   	dNdlog10(x) [tauR]  dNdlog10(x) [tau]   dNdlog10(x) [nue]   dNdlog10(x) [numu]   	dNdlog10(x) [nutau]		dNdlog10(x) [u]  		dNdlog10(x) [d]  	 dNdlog10(x) [s]  	  dNdlog10(x) [c]     dNdlog10(x) [b]   		dNdlog10(x) [t]		dNdlog10(x) [a] 		dNdlog10(x) [g]     dNdlog10(x) [W]     dNdlog10(x) [WL]    dNdlog10(x) [WT]        dNdlog10(x) [Z]        dNdlog10(x) [ZL]       dNdlog10(x) [ZT]    dNdlog10(x) [H]     dNdlog10(x) [aZ]	   dNdlog10(x)[ HZ ]    		  
+[$e^+_L e^-_L$]  [$e^+_R e^-_R$]  [$e^+ e^-$]  [$\mu^+_L \mu^-_L$]  [$\mu^+_R \mu^-_R$]  [$\mu^+ \mu^-$]  [$\tau^+_L \tau^\
+-_L$]  [$\tau^+_R \tau^-_R$]  [$\tau^+ \tau^-$]  [$\nu_e \bar{\nu}_e$]  [$\nu_\mu \bar{\nu}_\mu$]  [$\nu_\tau \bar{\nu}_\tau$]  [$u \bar{u}$] \
+ [$d \bar{d}$]  [$s \bar{s}$]  [$c \bar{c}$]  [$b \bar{b}$]  [$t \bar{t}$]  [$\gamma \gamma$]  [$g g$]  [$W^+ W^-$]  [$W_L W_L$]  [$W_T W_T$] \
+ [$Z Z$]  [$Z_L Z_L$]  [$Z_T Z_T$]  [$H H$]  [$Z \gamma$]  [$H Z$]    		  
 ```
 
-For the anitdeuteron case, the spectra in ASCII format can be found in the folder `AntiDeuterons/`. So far we have the spectra for 9 annihilation channels. The files are
+For the anitdeuteron case, the spectra in ASCII format can be found in the folder `AntiDeuterons/`. So far we have the spectra for 15 annihilation channels. The files are
 named as 
 AtProduction-AntiD-Model.dat where Model=pcoal, pcoalsigma, spherical, GWF, AWF.
 
@@ -89,6 +92,63 @@ Each file contains 11 column: The DM mass in GeV, and the fraction -- defined as
 ```console
 uu        dd     cc      bb    tt    gg    WW     ZZ    HH
 ```
+
+## Number of events per annihilation
+
+To guarantee small statistical fluctuations we have generated large number of events per annihilation channel and per dark-matter mass. For the channels relevant to antideuteron spectra the number of annihilation events scale inversely with mass, i.e. larger events for low masses. We used the following grid
+
+|   m_DM [GeV] | N_events |
+|-------------:|---------:|
+|      5.01187 | 22.91234 |
+|      6.30957 | 17.63009 |
+|      7.94328 | 13.91718 |
+|     10.00000 | 11.17117 |
+|     12.58925 |  9.06216 |
+|     15.84893 |  7.40872 |
+|     19.95262 |  6.10322 |
+|     25.11886 |  5.06775 |
+|     31.62278 |  4.23995 |
+|     39.81072 |  3.57341 |
+|     50.11872 |  3.03536 |
+|     63.09573 |  2.60036 |
+|     79.43282 |  2.24636 |
+|    100.00000 |  1.95453 |
+|    125.89254 |  1.70982 |
+|    158.48932 |  1.50104 |
+|    199.52623 |  1.32084 |
+|    251.18864 |  1.16502 |
+|    316.22777 |  1.03078 |
+|    398.10717 |  0.91530 |
+|    501.18723 |  0.81559 |
+|    630.95734 |  0.72894 |
+|    794.32823 |  0.65322 |
+|   1000.00000 |  0.58682 |
+|   1258.92541 |  0.52857 |
+|   1584.89319 |  0.47756 |
+|   1995.26231 |  0.43282 |
+|   2511.88643 |  0.39330 |
+|   3162.27766 |  0.35808 |
+|   3981.07171 |  0.32651 |
+|   5011.87234 |  0.29813 |
+|   6309.57344 |  0.27258 |
+|   7943.28235 |  0.24947 |
+|  10000.00000 |  0.22852 |
+|  12589.25412 |  0.20953 |
+|  15848.93192 |  0.19237 |
+|  19952.62315 |  0.17690 |
+|  25118.86432 |  0.16295 |
+|  31622.77660 |  0.15037 |
+|  39810.71706 |  0.13911 |
+|  50118.72336 |  0.12926 |
+|  63095.73445 |  0.12115 |
+|  79432.82347 |  0.11528 |
+| 100000.00000 |  0.11219 |
+
+Where the number of events is scaled by 10^{-8}. For annihilation channels into photons and leptons, i.e.
+$$
+\chi\chi \to \gamma\gamma, e_L^+ e_L^-, e_R^+ e_R^-, e^+ e^-, \mu_L^+ \mu_L^-, \mu_R^+ \mu_R^-, \mu^+ \mu^-, \tau^+_L \tau^-_L, \tau^+_R \tau^-_R, \tau^+ \tau^-, \nu \bar{\nu},
+$$
+we have generated 15 million annihilation events.
 
 ## How to generate the spectra with MadDM
 
