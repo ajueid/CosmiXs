@@ -88,16 +88,16 @@ For the anitdeuteron case, the spectra in ASCII format can be found in the folde
 named as 
 AtProduction-AntiD-Model.dat where Model=pcoal, pcoalsigma, spherical, GWF, AWF.
 
-Each file contains 11 column: The DM mass in GeV, and the fraction -- defined as the kinetic energy of the antideuteron divided by the DM mass in 180 bins on the logarithmic scale and the spectrum in units of dN/dlog10(x):
+Each file contains 17 column: The DM mass in GeV, and the fraction -- defined as the kinetic energy of the antideuteron divided by the DM mass in 180 bins on the logarithmic scale and the spectrum in units of dN/dlog10(x):
 ```console
-uu        dd     cc      bb    tt    gg    WW     ZZ    HH
+uu; dd; ss; cc; bb; tt; gamma gamma; gg;  WW;   W_L W_L;  W_T W_T; ZZ;  Z_L Z_L;  Z_T Z_T;  HH; Z gamma; HZ
 ```
 
 ## Number of events per annihilation
 
 To guarantee small statistical fluctuations we have generated large number of events per annihilation channel and per dark-matter mass. For the channels relevant to antideuteron spectra the number of annihilation events scale inversely with mass, i.e. larger events for low masses. We used the following grid
 
-|   m_DM [GeV] | N_events |
+|   Mass [GeV] |# of events |
 |-------------:|---------:|
 |      5.01187 | 22.91234 |
 |      6.30957 | 17.63009 |
@@ -145,6 +145,7 @@ To guarantee small statistical fluctuations we have generated large number of ev
 | 100000.00000 |  0.11219 |
 
 Where the number of events is scaled by 10^{-8}. For annihilation channels into photons and leptons, i.e.
+
 $$
 \chi\chi \to \gamma\gamma, e_L^+ e_L^-, e_R^+ e_R^-, e^+ e^-, \mu_L^+ \mu_L^-, \mu_R^+ \mu_R^-, \mu^+ \mu^-, \tau^+_L \tau^-_L, \tau^+_R \tau^-_R, \tau^+ \tau^-, \nu \bar{\nu},
 $$
