@@ -46,25 +46,25 @@ class Interpolate:
     # Fetches the requested data from the appropriate table.
     def _get_data_from_table(self):
         if self.path == None:
-            df = pd.read_table('{0}/{1}'.format(Path(__file__).parent.absolute(), 'Data/AtProduction-{}.dat'.format(self.final_state)), sep = '\s\s+', engine='python')
+            df = pd.read_table('{0}/{1}'.format(Path(__file__).parent.absolute(), 'Data/AtProduction-{}.dat'.format(self.final_state)), sep = r'\s+', engine='python')
+#            print("DEBUG columns:", df.columns.tolist())
         else:
-            df = pd.read_table('{0}/AtProduction-{1}.dat'.format(self.path, self.final_state), sep = '\s\s+', engine='python')
-        dm = df['# DM']
+            df = pd.read_table('{0}/AtProduction-{1}.dat'.format(self.path, self.final_state), sep = r'\s+', engine='python')
+        dm = df['#DM']
         
         if not '+DHad [{}]'.format(self.channel) in list(df.columns):
             if self.mass in dm.unique():
-                x       = list(df[df['# DM'] == self.mass]['Log10[x]'])
-                dNdLog10x    = list(df[df['# DM'] == self.mass]['dNdLog10x [{}]'.format(self.channel)])
+                x       = list(df[df['#DM'] == self.mass]['Log10[x]'])
+                dNdLog10x    = list(df[df['#DM'] == self.mass]['dNdLog10x[{}]'.format(self.channel)])
                 return x, dNdLog10x
             else:
                 mass_lower, mass_upper = self._check_mass_enclosure(dm)
-                x_upper       = list(df[df['# DM'] == mass_upper]['Log10[x]'])
-                dNdx_upper    = list(df[df['# DM'] == mass_upper]['dNdLog10x [{}]'.format(self.channel)])
-                x_lower       = list(df[df['# DM'] == mass_lower]['Log10[x]'])
-                dNdx_lower    = list(df[df['# DM'] == mass_lower]['dNdLog10x [{}]'.format(self.channel)])
+                x_upper       = list(df[df['#DM'] == mass_upper]['Log10[x]'])
+                dNdx_upper    = list(df[df['#DM'] == mass_upper]['dNdLog10x[{}]'.format(self.channel)])
+                x_lower       = list(df[df['#DM'] == mass_lower]['Log10[x]'])
+                dNdx_lower    = list(df[df['#DM'] == mass_lower]['dNdLog10x[{}]'.format(self.channel)])
                 return mass_upper, x_upper, dNdx_upper, mass_lower, x_lower, dNdx_lower
     
-    # Checks between wich two computed masses the user-specified mass is.
     def _check_mass_enclosure(self, dm):
         masses = dm.unique()
         for m in masses:
