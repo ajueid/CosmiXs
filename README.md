@@ -1,4 +1,5 @@
 ![alt text](http://github.com/ajueid/DMSpectra/blob/main/img/Logo.png?raw=true)
+[![License: COSMIXS Attribution](https://img.shields.io/badge/License-COSMIXS--Attribution-blue.svg)](./LICENSE.md)
 
 # CosmiXs: Cosmic messenger spectra for indirect dark matter searches 
 
@@ -241,6 +242,22 @@ If you would like to assess QCD uncertainties on the spectra (repo can be found 
 - [A. Jueid, J.Kip, R. Ruiz de Austri, P.Skands, JHEP 02 (2024) 119](https://arxiv.org/abs/2303.11363)
 - [A. Jueid, J.Kip, R. Ruiz de Austri, P.Skands, JCAP 04 (2023) 068](https://arxiv.org/abs/2202.11546)
 - [S. Amoroso, S. Caron, A. Jueid, R. Ruiz de Austri, P.Skands, JCAP 05 (2019) 007](https://arxiv.org/abs/1812.07424)
+
+---
+
+### License
+
+This project is distributed under the **COSMIXS Attribution License**.
+
+You are free to use, share, and modify the material, provided you:
+
+1. Cite the following papers:
+   - Arina et al., *JCAP* 03 (2024) 035  
+   - Di Mauro et al., *Phys. Rev. Lett.* 135 (2025) 13, 131002  
+2. Include a link to the COSMIXS GitHub page.  
+3. Indicate any modifications made.
+
+See the full license in [`LICENSE.md`](./LICENSE.md).
 
 
 ## Contact
