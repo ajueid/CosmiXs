@@ -245,6 +245,11 @@ If you would like to assess QCD uncertainties on the spectra (repo can be found 
 
 ---
 
+### Important note
+In our setup, the upper edge of the last energy bin coincides with the dark matter mass. We regard this as the most physically consistent choice, since the kinematic endpoint is then aligned with the boundary of the binning.
+An alternative convention is to define the binning such that the center of the last bin coincides with the dark matter mass, as is done, for example, in PPPC4DM. With this choice, the tabulated or plotted spectrum appears to extend all the way to the dark matter mass. However, the last bin is then centered on the kinematic endpoint rather than terminating at it. Consequently, only the lower half of that bin lies within the kinematically accessible region, while the upper half contains no events. The bin-averaged spectrum in the last bin is therefore artificially suppressed relative to a binning in which the upper edge, rather than the center, is placed at the endpoint.
+This distinction becomes particularly relevant for line, box, or VIB-like emission, for which tabulated spectra such as CosmiXs are not specifically designed. More generally, neither our tables nor PPPC are intended to accurately resolve very narrow spectral features close to the dark matter mass. In the case of line emission, a dedicated treatment should instead be performed, in which the line signal is convolved with the energy resolution of the experiment.
+
 ### License
 
 This project is distributed under the **COSMIXS Attribution License**.
